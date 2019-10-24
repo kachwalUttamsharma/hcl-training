@@ -1,0 +1,37 @@
+<<<<<<< HEAD
+package com.hcl.java;
+
+public class CalcDemo {
+	
+	public void calc(int a,int b){
+		int c=a+b;
+		System.out.println("Sum is "+ c);
+	}
+	public static void main(String[] args) {
+	 int a,b;
+	 a=Integer.parseInt(args[0]);
+	 b= Integer.parseInt(args[1]);
+	 CalcDemo obj = new CalcDemo();
+	 obj.calc(a,b);
+	}
+
+}
+=======
+package com.hcl.java;
+
+public class CalcDemo {
+	
+	public void calc(int a,int b){
+		int c=a+b;
+		System.out.println("Sum is "+ c);
+	}
+	public static void main(String[] args) {
+	 int a,b;
+	 a=Integer.parseInt(args[0]);
+	 b= Integer.parseInt(args[1]);
+	 CalcDemo obj = new CalcDemo();
+	 obj.calc(a,b);
+	}
+
+}
+>>>>>>> aa5826ca9d0adb45959d1cbd7004f71603446a9f

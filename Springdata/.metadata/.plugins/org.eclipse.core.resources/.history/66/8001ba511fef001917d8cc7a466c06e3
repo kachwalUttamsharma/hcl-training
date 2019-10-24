@@ -1,0 +1,11 @@
+package com.hcl.Dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.hcl.model.employee;
+
+public interface EmployeeDao extends CrudRepository<employee, Integer>{
+
+	
+
+}

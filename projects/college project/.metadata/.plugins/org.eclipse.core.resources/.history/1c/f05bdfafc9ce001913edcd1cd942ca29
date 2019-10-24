@@ -1,0 +1,9 @@
+package com.hcl.CollegeProject;
+
+
+
+public class HibernateUtil {
+  public static SessionFactory
+  }
+
+

@@ -1,0 +1,19 @@
+package com.hcl.dao;
+
+import com.hcl.model.Employee;
+
+public class Employeedaoimpl implements Employeedao {
+
+	@Override
+	public Employee getEmployee(int id) {
+		public String addEmployee(Employee e) {
+			SessionFactory sf= HibernateUtil.getConnection();
+			Session s =sf.getCurrentSession();
+			Transaction t=s.beginTransaction();
+			s.save(e);
+			t.commit();
+			return "Employee added sucessfully";
+		}
+	}
+
+}

@@ -1,0 +1,86 @@
+package com.hcl.inventory;
+
+
+import static org.junit.Assert.*;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.junit.Test;
+
+import com.hcl.bank.DaoConnection;
+
+
+
+
+public class InventoryTestCase {
+	
+	
+	@Test
+	public void testDaoConnection(){
+		assertNotNull(DaoConnection.getConnection());
+	}
+
+	@Test
+	public void testGenerateStockId(){
+		Connection con; 
+		int id = 1;
+		con = DaoConnection.getConnection();
+		String cmd = "select max(stockid) sid From stock";
+		String resultId = "";
+	    PreparedStatement pst;
+		try {
+			pst = con.prepareStatement(cmd);
+			ResultSet rs = pst.executeQuery();
+			rs.next();
+			String stid = rs.getString("sid");
+			id = Integer.parseInt(stid.substring(1));
+			id++;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String bid = InventoryBAL.generateStockIdBal();
+		int biid = Integer.parseInt(bid.substring(1));
+		assertEquals(id, biid);
+	
+	}	
+	
+	
+	@Test
+	public void testGenerateOrderId(){
+		int id = 0;
+		InventoryDAO i = new InventoryDAO();
+		Connection con = DaoConnection.getConnection();
+		String cmd = "Select max(orderId)+1 id from orders";
+		try {
+			PreparedStatement pst = con.prepareStatement(cmd);
+			ResultSet rs = pst.executeQuery();
+			rs.next();
+			id = rs.getInt("id");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		assertEquals(id, i.generateOrderIdDao());
+	}
+	
+	
+	@Test
+	public void testGettersAndSetters(){
+		Stock objStock = new Stock();
+		objStock.setStockId("s004");
+		objStock.setItemName("Med");
+		objStock.setPrice(3000.00);
+		objStock.setQuantityAvail(20);
+		
+		assertEquals("s004", objStock.getStockId());
+		assertEquals("Med", objStock.getItemName());
+		assertEquals(3000, objStock.getPrice(),0.00);
+		assertEquals(20, objStock.getQuantityAvail());
+
+		
+	}
+}

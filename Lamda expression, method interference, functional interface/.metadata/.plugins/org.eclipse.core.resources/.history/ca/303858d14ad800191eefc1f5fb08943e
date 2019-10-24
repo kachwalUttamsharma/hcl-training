@@ -1,0 +1,6 @@
+package com.hcl.fi;
+
+public class InstanceMain {
+    InstanceInterface minterface= () -> {System.out.println("hey man!");};
+    minterface.
+}

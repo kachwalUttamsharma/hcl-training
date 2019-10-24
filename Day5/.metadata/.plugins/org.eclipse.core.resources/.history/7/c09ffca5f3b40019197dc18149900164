@@ -1,0 +1,24 @@
+package com.hcl.collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrListDemo {
+
+	public static void main(String[] args) {
+		List Names = new ArrayList();
+		Names.add("Laksh");
+		Names.add("Athar");
+		Names.add("Geet");
+		Names.add("Aadi");
+		Names.add("Master");
+		Names.add("System");
+		System.out.println("Names are ");
+		//for (Object obj1 : Names) {
+			//System.out.println(obj1);
+		//}
+		System.out.println("JDK 1.8 ");
+		Names.forEach(System.out::println);
+		
+	}
+}

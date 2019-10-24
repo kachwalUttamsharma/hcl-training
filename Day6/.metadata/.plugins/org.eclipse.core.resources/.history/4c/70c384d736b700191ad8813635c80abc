@@ -1,0 +1,21 @@
+package com.hcl.day6.collection;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class GenListInt {
+
+	public static void main(String[] args) {
+		List<Integer> 1stData = new ArrayList<Integer>();
+		1stData.add(new Integer(23));
+		1stData.add(new Integer(03));
+		1stData.add(new Integer(63));
+		1stData.add(new Integer(65));
+		1stData.add(new Integer(97));
+		int sum = 0;
+		for (Integer string : args) {
+			
+		}
+		
+	}
+}

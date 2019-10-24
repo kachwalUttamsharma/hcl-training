@@ -1,0 +1,8 @@
+package com.hcl.StudentSpringHibernatedao;
+
+public interface StudentDao {
+  public void addStudent();
+  public void upateStudent();
+  public void getStudent();
+  
+}

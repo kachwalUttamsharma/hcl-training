@@ -1,0 +1,12 @@
+127.0.0.1 - - [22/Aug/2019:09:39:53 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:09:39:55 +0530] "GET /BeanDemo/Hello.jsp HTTP/1.1" 200 316
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:09:42:30 +0530] "GET /BeanDemo/Hello.jsp HTTP/1.1" 200 387
+127.0.0.1 - - [22/Aug/2019:14:19:46 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:19:47 +0530] "GET /LibraryProject/LoginLibrary.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:40:50 +0530] "GET /LibraryProject/LoginLibraryServlet?userName=bhargav&password=ravula HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:40:52 +0530] "GET /LibraryProject/searchServlet HTTP/1.1" 500 1007
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:40:56 +0530] "GET /LibraryProject/searchServlet?searchtype=id&searchname=3 HTTP/1.1" 200 1041
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:40:57 +0530] "GET /LibraryProject/searchServlet?searchname= HTTP/1.1" 500 1007
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:41:05 +0530] "GET /LibraryProject/searchServlet?searchtype=dept&searchname=c%2Fc%2B%2B HTTP/1.1" 500 1007
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:41:12 +0530] "GET /LibraryProject/searchServlet?searchtype=dept&searchname=C%2FC%2B%2B HTTP/1.1" 500 1007
+0:0:0:0:0:0:0:1 - - [22/Aug/2019:14:41:26 +0530] "GET /LibraryProject/searchServlet?searchtype=id&searchname=2 HTTP/1.1" 200 1042

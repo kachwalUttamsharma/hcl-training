@@ -1,0 +1,21 @@
+package com.hcl.inh;
+
+public class StringMethods {
+	
+	public void character(String s){
+		char[] arr = s.toCharArray();
+		int i=0;
+		for (char c : arr) {
+			i++;
+		}
+		if(arr[i]==i){
+		System.out.println(arr[i]);
+		
+		}
+		
+	}
+	public static void main(String[] args) {
+		StringMethods sm = new StringMethods();
+		sm.character("Hello");
+	}
+}

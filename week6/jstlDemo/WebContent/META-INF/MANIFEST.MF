@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+Manifest-Version: 1.0
+Class-Path: 
+
+=======
+Manifest-Version: 1.0
+Class-Path: 
+
+>>>>>>> aa5826ca9d0adb45959d1cbd7004f71603446a9f

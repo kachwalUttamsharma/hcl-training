@@ -1,0 +1,52 @@
+package com.hcl.Ex;
+
+class InvalidEmailException extends Exception{
+	public InvalidEmailException(String error){
+		super(error);
+	}
+}
+
+class InvalidUsernameException extends Exception{
+	public InvalidUsernameException(String error){
+		super(error);
+	}
+}
+
+public class Custom1 {
+
+	public void Check(String s) throws InvalidEmailException, InvalidUsernameException{
+		
+		boolean flag = false;
+		int n=0;
+		char[] c = s.toCharArray();
+		for(int i=0;i<=s.length()-1;i++){
+			if(c[i]=='@'){
+				flag = true;
+				System.out.println("has @");
+				continue;
+			}else{
+				n++;
+				//flag = false;
+			}
+		
+		}
+		if (flag == false){
+			throw new InvalidEmailException("Without @");
+		}
+		if(n>12){
+			throw new InvalidUsernameException("Characters are greater than 12");
+		}
+		
+	} 
+	public static void main(String[] args) {
+		String s="hello@@2@@@@gmail.com";
+		try {
+			new Custom1().Check(s);
+		} catch (InvalidEmailException | InvalidUsernameException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+}

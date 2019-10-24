@@ -1,0 +1,35 @@
+package com.hcl.obj.java;
+
+public class Agent {
+	
+	public StringBuilder show(String agentId,
+							  String fullName,
+							  int maritalStatus,
+							  String zipcode){
+		StringBuilder sbError = new StringBuilder();
+		boolean isValid = true;
+		if(agentId.charAt(0)== 'A'){
+			sbError.append("Agent ID starts with Letter A"+"\r\n");
+			isValid = false;
+		}
+		if(fullName.indexOf(' ') == -1){
+			sbError.append("Name contains both First and Last Name"+"\r\n");
+			isValid = false;
+		}
+		if(fullName.length() >=20 ){
+			sbError.append("Name cannot be greater than 20 character"+"\r\n");
+			isValid = false;
+		}
+		if(maritalStatus !=0 ||maritalStatus !=1){
+			sbError.append("Different marital Status entered"+"\r\n");
+			isValid = false;
+		}
+		if(zipcode.length()!= 6)
+	}
+	
+	public static void main(String[] args) {
+		int 
+
+	}
+
+}

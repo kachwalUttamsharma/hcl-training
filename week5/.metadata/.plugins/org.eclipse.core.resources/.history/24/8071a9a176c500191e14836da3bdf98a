@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method = "get" action = "LoginLibraryServlet">
+
+<h3>Please Login :</h3>
+UserName :
+<input type = "text" name = "userName"/><br/><br/>
+PassWord :
+<input type = "password" name = "password"/><br/><br/>
+<input type = "submit" value = "login"/>
+
+</form>
+</body>
+</html>

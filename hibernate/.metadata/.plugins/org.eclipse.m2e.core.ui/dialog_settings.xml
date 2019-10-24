@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\hcljava\hibernate\HibEmployShow\src\main\java\com\hcl\HibEmployShow\EmployInsert.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.hcl.Department"/>
+			<item value="hcl.DepartmentCRUDHib"/>
+			<item value="com.hcl.EmployCRUDHib"/>
+			<item value="com.hcl.EmployShow"/>
+			<item value="hcl.EmployCRUDHib"/>
+			<item value="com.hcl.EmployInsertAnnotation"/>
+			<item value="com.hcl.EmployInsert"/>
+			<item value="hcl.EmploySearchAnnotation"/>
+			<item value="hcl.DepartmentShowAnnotation"/>
+			<item value="hcl.EmployShowAnnotation"/>
+			<item value="com.hcl.Hib"/>
+			<item value="com.hcl.HibEmployShow"/>
+		</list>
+		<list key="groupId">
+			<item value="hcl"/>
+		</list>
+		<list key="artifactId">
+			<item value="DepartmentCRUDHib"/>
+			<item value="EmployCRUDHib"/>
+			<item value="EmployShowCrud"/>
+			<item value="EmployInsertAnnotation"/>
+			<item value="EmployInsert"/>
+			<item value="EmploySearchAnnotation"/>
+			<item value="DepartmentShowAnnotation"/>
+			<item value="EmployShowAnnotation"/>
+			<item value="HibDepartmentShow"/>
+			<item value="HibEmployShow"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

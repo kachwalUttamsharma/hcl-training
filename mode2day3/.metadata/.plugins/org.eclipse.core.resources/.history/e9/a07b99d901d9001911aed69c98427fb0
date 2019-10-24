@@ -1,0 +1,6 @@
+package com.hcl.EmployeeStream;
+
+public class Employee {
+   private int empNo;
+   private 
+}

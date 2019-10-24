@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+function concc{
+	var u ,p;
+	u = frmFull.first.value;
+	p = frmFull.second.value;
+}

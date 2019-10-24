@@ -1,0 +1,20 @@
+package com.hcl.java;
+
+public class EvenOdd {
+
+	public void check(double n){
+		if(n%2 == 0){
+			System.out.println("Even");
+		}
+		else{
+			System.out.println("Odd");
+		}
+		
+	}
+	public static void main(String[] args) {
+		double n = 13;
+		EvenOdd obj = new EvenOdd();
+		obj.check(n);
+	}
+
+}

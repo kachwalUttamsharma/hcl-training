@@ -1,0 +1,15 @@
+package com.hcl.day5.col;
+
+public class AssertDemo {
+	public void inr(){
+		int basic = 30000;
+		for(int i = 0;i<8;i++){
+			basic = basic +4000;
+			assert basic < 48000;
+			System.out.println("Salary" +basic);
+		}
+	}
+	public static void main(String[] args) {
+		new AssertDemo().inr();
+	}
+}

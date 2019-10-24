@@ -1,0 +1,19 @@
+package com.hcl.inh;
+
+public class Inhc {
+
+	public static void main(String[] args) {
+		new Second();
+	}
+
+}
+ class First{
+	 public First(){
+		 System.out.println("base class const.");
+	 }
+ }
+ class Second extends First{
+	 public Second(){
+		 System.out.println("Derived class const..");
+	 }
+ }

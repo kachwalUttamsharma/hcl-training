@@ -1,0 +1,14 @@
+package com.hcl.uttam;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class accountservice {
+	
+	accountrepository accountrepository;
+	
+	  public account userAuthentication(String user) {
+		  System.out.println("Service : "+ user);
+		  return accountrepository.getAccountByUserid(user);
+
+}

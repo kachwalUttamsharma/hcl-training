@@ -1,0 +1,43 @@
+package com.hcl.intf;
+
+interface IFirst {
+	default void name() // Defender Method
+	{
+		System.out.println("IFirst");
+
+	}
+}
+	interface ISecond {
+		default void name() {
+			System.out.println("ISecond");
+		}
+	}
+
+
+interface IThird {
+	void nam();
+}
+
+class Demo implements IFirst, ISecond, IThird {
+
+	@Override
+	public void name() {
+		IFirst.super.name();
+		ISecond.super.name();
+		//IThird.super.nam();
+	}
+
+	@Override
+	public void nam() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+
+public class IntfTest {
+
+	public static void main(String[] args) {
+		new Demo().name();
+	}
+}

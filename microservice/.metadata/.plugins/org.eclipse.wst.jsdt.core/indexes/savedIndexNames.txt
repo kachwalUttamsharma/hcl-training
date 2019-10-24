@@ -1,0 +1,12 @@
+INDEX VERSION 1.4+C:\hclfiles\microservice\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3909209652.index
+316916082.index
+3037819185.index
+674008923.index
+4144958646.index
+4086588287.index
+1321949758.index
+1834869064.index
+3423103732.index
+3587031292.index
+2116371595.index

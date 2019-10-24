@@ -1,0 +1,14 @@
+package com.hcl.uttam;
+
+import java.util.List;
+
+public interface ClientService {
+
+	public String login(User user);
+	
+	public String addAccount(account account);
+	
+	public String deleteAccount(int accoutnum);
+	
+	public List<String> getAccount(int userid);
+}

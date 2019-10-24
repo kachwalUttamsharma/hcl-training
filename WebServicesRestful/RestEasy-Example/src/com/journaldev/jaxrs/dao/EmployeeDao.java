@@ -1,0 +1,17 @@
+package com.journaldev.jaxrs.dao;
+
+import org.hibernate.sql.Delete;
+
+import com.journaldev.jaxrs.model.Employee;
+
+public interface EmployeeDao {
+	
+	public String addEmployee(Employee e);
+	
+//	public String deleteEmployee(int id);
+	
+//	public Employee getEmployee(int id);
+	
+// Employee[] getAllEmployee();
+
+}

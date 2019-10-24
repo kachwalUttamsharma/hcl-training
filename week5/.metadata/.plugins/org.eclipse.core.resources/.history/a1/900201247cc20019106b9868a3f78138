@@ -1,0 +1,10 @@
+package com.hcl.library;
+
+
+public class libraryBAL {
+
+	public static books searchBookBal(String searchtype,String value){
+		return new libraryDAO().searchbook(stockId);
+	}
+	
+}

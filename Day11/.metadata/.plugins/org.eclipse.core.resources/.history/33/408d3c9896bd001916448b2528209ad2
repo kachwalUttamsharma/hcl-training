@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+ function sum(){
+	 
+	 if(isNaN(frmCalc.txtFirstNo.value)){
+		 document.getElementById("err1").innerHTML=" Invalid Input ";
+		 return;
+	 }else{
+		 document.getElementById("err1").innerHTML = "";
+	 }
+	 if(frmCalc.frmFirstNo.value==""){
+		 document.getElementById("err1").innerHTML = "Please Enter First No ";
+		 return;
+	 }else{
+		 document.getElementById("err1").innerHTML = "";
+	 }
+	 if(frmCalc.frmSecondNo.value==""){
+		 document.getElementById("err2").innerHTML = "Please Enter Second No ";
+		 return;
+	 }else{
+		 document.getElementById("err2").innerHTML = "";
+	 }
+	 var a,b,c;
+	 a=parseInt(frmCalc.frmFirstNo.value);
+	 b=parseInt(frmCalc.frmSecondNo.value);
+	 c=a+b;
+	 frmCalc.Result.value=c;
+ }
+ function sub(){
+	 if(frmCalc.frmFirstNo.value==""){
+		 document.getElementById("err1").innerHTML = "Please Enter First No ";
+		 return;
+	 }else{
+		 document.getElementById("err1").innerHTML = "";
+	 }
+	 if(frmCalc.frmSecondNo.value==""){
+		 document.getElementById("err2").innerHTML = "Please Enter Second No ";
+		 return;
+	 }else{
+		 document.getElementById("err2").innerHTML = "";
+	 }
+	 var a,b,c;
+	 a=parseInt(frmCalc.frmFirstNo.value);
+	 b=parseInt(frmCalc.frmSecondNo.value);
+	 c=a-b;
+	 frmCalc.Result.value=c;
+ }
+ function mult(){
+	 if(frmCalc.frmFirstNo.value==""){
+		 document.getElementById("err1").innerHTML = "Please Enter First No ";
+		 return;
+	 }else{
+		 document.getElementById("err1").innerHTML = "";
+	 }
+	 if(frmCalc.frmSecondNo.value==""){
+		 document.getElementById("err2").innerHTML = "Please Enter Second No ";
+		 return;
+	 }else{
+		 document.getElementById("err2").innerHTML = "";
+	 }
+	 var a,b,c;
+	 a=parseInt(frmCalc.frmFirstNo.value);
+	 b=parseInt(frmCalc.frmSecondNo.value);
+	 c=a*b;
+	 frmCalc.Result.value=c;
+ }
+</script>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name = "frmCalc">
+		<center>
+			<table border = "3">
+				<tr>
+					<th colspan = "2">Calc Form</th>
+				</tr>
+				<tr>
+					<th>First No</th>
+					<td><input type = "text" name = "frmFirstNo" />
+					<span id = "err1"></span>
+					</td>
+				</tr>
+				<tr>
+					<th> Second No</th>
+					<td><input type = "text" name = "frmSecondNo"/>
+				    <span id = "err2"></span>
+					</td>
+				</tr>
+				<tr>
+					<th> Result </th>
+					<td><input type = "text" name = "Result"/></td>
+				</tr>
+				<tr>
+					<th colspan = "2">
+					<input type = "button" value = "sum" onclick="sum()"/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+					<input type = "button" value = "sub" onclick="sub()"/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+					<input type = "button" value = "mul" onclick="mult()"/>
+					</th>
+				</tr>
+			</table>
+		</center>
+	</form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+package com.hcl.Boxing;
+
+public class Quiz1 {
+	
+	public void show(Object x){
+		System.out.println("Object "+x);
+	}
+	public void show(double x){
+		System.out.println("Double "+x);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Quiz1().show(99999889889988989222888888139999999999999999999999999999999999999999999999251215481999885416871671687.0);
+	}
+
+}

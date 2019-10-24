@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\hclfiles\Springdata\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1483652638.index
+\AdvSpringSata\src\main\java

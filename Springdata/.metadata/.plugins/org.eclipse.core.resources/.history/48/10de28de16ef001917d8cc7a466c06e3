@@ -1,0 +1,7 @@
+package com.hcl.Dao;
+
+public class EmployeeDao {
+
+	
+	public interface EmployeeDao extends Crud
+}

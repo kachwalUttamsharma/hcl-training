@@ -1,0 +1,36 @@
+package com.hcl.spring.boot.uttam;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.client.RestTemplate;
+
+/**
+ * @author Dinesh.Rajput
+ *
+ */
+public class RemoteUserRepository implements ClientServiceUser {
+
+	@Autowired
+	protected RestTemplate restTemplate;
+
+	protected String serviceUrl;
+
+	public RemoteUserRepository(String serviceUrl) {
+		this.serviceUrl = serviceUrl.startsWith("http") ? serviceUrl : "http://" + serviceUrl;
+	}
+
+	@Override
+	public String login(User user) {
+		User user2 = restTemplate.getForObject(serviceUrl + "/User/Authentication/"  + user.getUsername() , User.class, user);
+		if (user.getUsername().equals(user2.getUsername()) && user.getPassword().equals(user2.getPassword())) {
+			return "login Successfull";
+		} else {
+			return "Login credentials wrong";
+		}
+
+	}
+	
+	
+}

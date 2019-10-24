@@ -1,0 +1,19 @@
+package com.hcl.Boxing;
+
+public class BoxEmploy {
+	
+	public void show(Object ob){
+		Employ e = new Employ();
+		System.out.println(e);
+	}
+
+	public static void main(String[] args) {
+		Employ objEmploy = new Employ();
+		objEmploy.empno=1;
+		objEmloy.name = "Nagendra";
+		objEmploy.basic=45446;
+		
+		new BoxEmploy().
+	}
+
+}

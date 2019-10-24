@@ -1,0 +1,9 @@
+127.0.0.1 - - [23/Sep/2019:17:52:50 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [23/Sep/2019:17:52:50 +0530] "GET /JsonWebJspHibernate/ HTTP/1.1" 404 1034
+0:0:0:0:0:0:0:1 - - [23/Sep/2019:18:11:50 +0530] "POST //JsonWebJspHibernate/employee/get HTTP/1.1" 404 1060
+127.0.0.1 - - [23/Sep/2019:18:21:48 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [23/Sep/2019:18:21:49 +0530] "GET /JsonWebJspHibernate/ HTTP/1.1" 404 1034
+0:0:0:0:0:0:0:1 - - [23/Sep/2019:18:24:52 +0530] "GET /JsonWebJspHibernate/ HTTP/1.1" 404 1034
+127.0.0.1 - - [23/Sep/2019:18:25:16 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [23/Sep/2019:18:25:16 +0530] "GET /JsonWebJspHibernate/ HTTP/1.1" 404 1034
+0:0:0:0:0:0:0:1 - - [23/Sep/2019:18:26:40 +0530] "POST /JsonWebJspHibernate/employee/get HTTP/1.1" 404 1058

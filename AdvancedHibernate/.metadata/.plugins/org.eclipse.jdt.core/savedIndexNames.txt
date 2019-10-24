@@ -1,0 +1,7 @@
+INDEX VERSION 1.127+C:\hcljava\AdvancedHibernate\.metadata\.plugins\org.eclipse.jdt.core
+435303374.index
+107137486.index
+2882305150.index
+66893524.index
+2600954188.index
+879304602.index

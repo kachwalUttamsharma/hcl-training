@@ -1,0 +1,5 @@
+package com.hcl.lamda;
+
+public interface DefaultInterface {
+
+}

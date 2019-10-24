@@ -1,0 +1,6 @@
+package com.hcl.fi;
+
+@FunctionalInterface
+public interface EmployeInterface {
+   public Employee show(int empNo,String empName);
+}

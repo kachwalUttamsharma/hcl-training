@@ -1,0 +1,55 @@
+package com.hcl.uttam;
+
+import java.util.List;
+import org.hibernate.Criteria;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.criterion.Order;
+import org.hibernate.criterion.Projection;
+import org.hibernate.criterion.Projections;
+import org.hibernate.criterion.Restrictions;
+
+public class Mainprog {
+
+	public static void main(String[] args) {
+		Configuration cfg = new AnnotationConfiguration();
+		cfg.configure("hibernate.cfg.xml");
+		SessionFactory sf = cfg.buildSessionFactory();
+		Session s = sf.openSession();
+		Query q = s.createQuery("from Employ");
+		q.setFirstResult(2);
+		q.setMaxResults(5);
+		Criteria c=s.createCriteria(Employ.class);
+//		c.addOrder(Order.asc("basic"));
+//		c.addOrder(Order.desc("name"));
+//		c.add(Restrictions.gt("basic", 123000));
+  
+		List<Employ> lst1= c.list();
+		List<Employ> lstEmply = q.list();
+		for (Employ employ : lst1) {
+			System.out.println("Empno " + employ.getEmpno());
+			System.out.println("Name " + employ.getName());
+			System.out.println("Dept " + employ.getDept());
+			System.out.println("Desig " + employ.getDesig());
+			System.out.println("Salary " + employ.getBasic()  );
+			System.out.println("====================");
+		}
+		   c.setProjection(Projections.property("name"));
+		   List<Employ> employ = c.list();
+		   System.out.println(employ.toString());
+		   
+		   Query q1 = s.getNamedQuery("HQL_GET_EMPLOY_BY_EMPNO");
+		   q1.setInteger("empno", 4);
+		   Employ emp = (Employ) q1.uniqueResult();
+		   System.out.println(emp.toString());
+		  
+		   Query q2 = s.getNamedQuery("HQL_GET_EMPLOY_BY_EMPNO");
+		   q1.setInteger("empno", 4);
+		   Employ emp1 = (Employ) q2.uniqueResult();
+		   System.out.println(emp.toString());
+
+	}
+}

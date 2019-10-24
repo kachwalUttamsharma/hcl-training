@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<ul>
+	<li>Priya</li>
+		<li>Priy</li>
+		<li>Pria</li>
+		<li>Prya</li>
+		<li>Piya</li>
+</ul>
+<hr/>
+<ul type = "circle">
+	<li>Priya</li>
+		<li>Priy</li>
+		<li>Pria</li>
+		<li>Prya</li>
+		<li>Piya</li>
+</ul>
+<hr/>
+<ul type = "square">
+	<li>Priya</li>
+		<li>Priy</li>
+		<li>Pria</li>
+		<li>Prya</li>
+		<li>Piya</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+package com.hcl.ex;
+
+public class Roman {
+
+	public String[] calc(String x){
+		String[] str1 = new String[]{"i","ii","iii","iv","v","vi","vii","viii","ix","x"};
+		String[] str2 = new String[3];
+		char[] c = x.toCharArray();
+		int n = c[0];
+		int m = c[1];
+		for(int i = 0 ; i<n;i++){
+			str2[0]=str1[i];
+		}
+		for(int j=0;j<=m-1;j++){
+			str2[1]=str1[j];
+		}
+		return str2;	
+		}
+		
+	public static void main(String[] args) {
+		Roman R1 = new Roman();
+		R1.calc("72");
+	}
+		
+}
+	
+	
+	
+

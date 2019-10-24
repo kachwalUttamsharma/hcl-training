@@ -1,0 +1,158 @@
+package com.hcl.library;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class libraryDAO {
+
+	PreparedStatement pst;
+	Connection con;
+	
+	
+	public books[] Searchbook(String searchtype , String value){
+		con = DaoConnection.getConnection();
+		String str = searchtype;
+		books book1[] = null;
+		int i =0;
+		switch(str){
+		case "id" :
+		{
+			int idd = Integer.parseInt(value);
+			String cmd = "select * from books where id = ?";
+			
+			
+			try {
+				pst = con.prepareStatement(cmd);
+				pst.setInt(1, idd);
+				ResultSet rs = pst.executeQuery();
+				if(rs.next()){
+					book1[i] = new books();
+					book1[i].setName(rs.getString("name"));
+					book1[i].setAuthor(rs.getString("author"));
+					book1[i].setEdition(rs.getString("edition"));
+					book1[i].setDept(rs.getString("dept"));
+					book1[i].setTotalbooks(rs.getInt("totalbooks"));
+				}
+				
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
+		}
+		
+		case "dept" :{
+
+			
+			String cmd = "select * from books where dept = ?";
+			
+			
+			try {
+				pst = con.prepareStatement(cmd);
+				pst.setString(1, value);
+				ResultSet rs = pst.executeQuery();
+				while(rs.next()){
+					book1[i] = new books();
+					book1[i].setId(rs.getInt("id"));
+					book1[i].setName(rs.getString("name"));
+					book1[i].setAuthor(rs.getString("author"));
+					book1[i].setEdition(rs.getString("edition"));
+					
+					book1[i].setTotalbooks(rs.getInt("totalbooks"));
+					i++;
+				}
+				
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		
+		
+//		case "name" : {
+//
+//
+//			
+//			String cmd = "select * from books where name = ?";
+//			
+//			
+//			try {
+//				pst = con.prepareStatement(cmd);
+//				pst.setString(1, value);
+//				ResultSet rs = pst.executeQuery();
+//				if(rs.next()){
+//					book1 = new books();
+//					book1.setId(rs.getInt("id"));
+//					book1.setAuthor(rs.getString("author"));
+//					book1.setEdition(rs.getString("edition"));
+//					book1.setDept(rs.getString("dept"));
+//					book1.setTotalbooks(rs.getInt("totalbooks"));
+//				}
+//				
+//			} catch (SQLException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//			
+//		}
+//		
+//		case "author" :{
+//
+//			String cmd = "select * from books where author = ?";
+//			
+//			
+//			try {
+//				pst = con.prepareStatement(cmd);
+//				pst.setString(1, value);
+//				ResultSet rs = pst.executeQuery();
+//				if(rs.next()){
+//					book1 = new books();
+//					book1.setId(rs.getInt("id"));
+//					book1.setName(rs.getString("name"));
+//					book1.setEdition(rs.getString("edition"));
+//					book1.setDept(rs.getString("dept"));
+//					book1.setTotalbooks(rs.getInt("totalbooks"));
+//				}
+//				
+//			} catch (SQLException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//			
+//		
+//		}
+//		
+//		case "all" :{
+//
+//			String cmd = "select * from books";
+//			
+//			
+//			try {
+//				pst = con.prepareStatement(cmd);
+//				ResultSet rs = pst.executeQuery();
+//				if(rs.next()){
+//					book1 = new books();
+//					book1.setId(rs.getInt("id"));
+//					book1.setName(rs.getString("name"));
+//					book1.setAuthor(rs.getString("author"));
+//					book1.setEdition(rs.getString("edition"));
+//					book1.setDept(rs.getString("dept"));
+//					book1.setTotalbooks(rs.getInt("totalbooks"));
+//				}
+//				
+//			} catch (SQLException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//			
+//		
+//		
+//		}
+		
+	}return book1;
+	
+	}
+}

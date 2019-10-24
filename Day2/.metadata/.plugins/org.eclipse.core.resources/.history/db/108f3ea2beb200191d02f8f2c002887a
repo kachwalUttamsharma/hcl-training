@@ -1,0 +1,27 @@
+package com.hcl.inh;
+
+
+	
+	class c1{
+		public void show(){
+			System.out.println("From show ..");
+		}
+	}
+	class c2 extends c1{
+		public void display(){
+			System.out.println("From Display...");
+		}
+	}
+	public class InhDemo {
+	public static void main(String[] args) {
+		c2 obj = new c2();
+		obj.display();
+		obj.show();
+		
+		Modifier obj2  = new Modifier();
+		obj2.a = 30;
+
+	}
+
+}
+// We cannot extend the wrapper class as they are fixed 

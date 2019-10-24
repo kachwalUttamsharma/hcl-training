@@ -1,0 +1,15 @@
+package com.hcl.day6.collection;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class LambdaProduct {
+	public static void main(String[] args) {
+		List <Product> list = new ArrayList<Product>();
+		
+		list.add(new Product(1,"Hp Laptop", 25000));
+		list.add(new Product(2,"Keyboard", 500));
+		list.add(new Product(3,"Dell Mouse", 150));
+		
+	}
+}

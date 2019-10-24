@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;jdbc.xml&apos; to &apos;EmployShow/resources&apos;&#x0D;&#x0A;- Original project: &apos;DepartmentInsert&apos;&#x0D;&#x0A;- Destination element: &apos;EmployShow/resources&apos;&#x0D;&#x0A;- Original element: &apos;jdbc.xml&apos;" description="Copy file" destination="=EmployShow/resources" element1="resources/jdbc.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1566973698036" units="0" version="1.0"/>
+</session>

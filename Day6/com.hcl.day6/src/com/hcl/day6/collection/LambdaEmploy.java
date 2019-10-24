@@ -1,0 +1,58 @@
+<<<<<<< HEAD
+package com.hcl.day6.collection;
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class LambdaEmploy {
+	public static void main(String[] args) {
+		List<Employ> emp  = new ArrayList<Employ>();
+		
+		emp.add(new Employ(1,"Divya",43543));
+		emp.add(new Employ(2,"Div",34625));
+		emp.add(new Employ(3,"Divay",67897));
+		emp.add(new Employ(4,"Diya",28347));
+		emp.add(new Employ(5,"ivya",35856));
+		
+		Collections.sort(emp, (p1,p2) -> {
+			return p1.name.compareTo(p2.name);
+		});
+		for (Employ empl : emp) {
+			System.out.println(empl);
+		}
+		System.out.println("=========================");
+		emp.stream().filter(p -> p.basic >= 35000).forEach(x ->{
+			System.out.println(x);
+		});
+  }
+=======
+package com.hcl.day6.collection;
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class LambdaEmploy {
+	public static void main(String[] args) {
+		List<Employ> emp  = new ArrayList<Employ>();
+		
+		emp.add(new Employ(1,"Divya",43543));
+		emp.add(new Employ(2,"Div",34625));
+		emp.add(new Employ(3,"Divay",67897));
+		emp.add(new Employ(4,"Diya",28347));
+		emp.add(new Employ(5,"ivya",35856));
+		
+		Collections.sort(emp, (p1,p2) -> {
+			return p1.name.compareTo(p2.name);
+		});
+		for (Employ empl : emp) {
+			System.out.println(empl);
+		}
+		System.out.println("=========================");
+		emp.stream().filter(p -> p.basic >= 35000).forEach(x ->{
+			System.out.println(x);
+		});
+  }
+>>>>>>> aa5826ca9d0adb45959d1cbd7004f71603446a9f
+}

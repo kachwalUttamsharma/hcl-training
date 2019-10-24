@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+ function sum(){
+	 var a,b,c;
+	 a=parseInt(frmCalc.frmFirstNo.value);
+	 b=parseInt(frmCalc.frmSecondNo.value);
+	 c=a+b;
+	 frmCalc.Result.value=c;
+ }
+ function sub(){
+	 var a,b,c;
+	 a=parseInt(frmCalc.frmFirstNo.value);
+	 b=parseInt(frmCalc.frmSecondNo.value);
+	 c=a-b;
+	 frmCalc.Result.value=c;
+ }
+ function mult(){
+	 var a,b,c;
+	 a=parseInt(frmCalc.frmFirstNo.value);
+	 b=parseInt(frmCalc.frmSecondNo.value);
+	 c=a*b;
+	 frmCalc.Result.value=c;
+ }
+</script>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name = "frmCalc">
+		<center>
+			<table border = "3">
+				<tr>
+					<th colspan = "2">Calc Form</th>
+				</tr>
+				<tr>
+					<th>First No</th>
+					<td><input type = "text" name = "frmFirstNo" /></td>
+				</tr>
+				<tr>
+					<th> Second No</th>
+					<td><input type = "text" name = "frmSecondNo"/></td>
+				</tr>
+				<tr>
+					<th> Result </th>
+					<td><input type = "text" name = "Result"/></td>
+				</tr>
+				<tr>
+					<th colspan = "2">
+					<input type = "button" value = "sum" onclick="sum()"/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+					<input type = "button" value = "sub" onclick="sub()"/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+					<input type = "button" value = "mul" onclick="mult()"/>
+					</th>
+				</tr>
+			</table>
+		</center>
+	</form>
+</body>
+</html>

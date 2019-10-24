@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com/xml note.xsd">	
+	<employee>
+		<empno>1</empno>
+		<empname>A</empname>
+		<salary>10000</salary>
+		<band>M</band>
+		<dateofjoin>2019-06-15</dateofjoin>
+	</employee>
+	<employee>
+		<empno>1</empno>
+		<empname>A</empname>
+		<salary>10000</salary>
+		<band>M</band>
+		<dateofjoin>2019-06-15</dateofjoin>
+	</employee>
+
+</employees>

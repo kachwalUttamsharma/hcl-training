@@ -1,0 +1,7 @@
+package com.hcl.lamda;
+
+public interface DefaultInterface {
+ default void printHello(){
+	 System.out.println("Hello Default");
+ }
+}

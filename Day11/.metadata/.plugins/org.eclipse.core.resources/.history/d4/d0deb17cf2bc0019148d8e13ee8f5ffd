@@ -1,0 +1,7 @@
+package com.hcl.threads;
+
+public class hhsh {
+	public void main(String[] args) {
+		System.out.println("jhndsh");
+	}
+}

@@ -1,0 +1,9 @@
+package com.hcl.calc;
+
+
+public class MainProg {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("Calc.xml");
+	}
+}

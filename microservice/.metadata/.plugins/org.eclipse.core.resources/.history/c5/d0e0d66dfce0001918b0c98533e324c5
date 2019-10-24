@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<center>
+			<tr>
+				<th>Account Number</th>
+				<th>Amount</th>
+				<th>Accounttype</th>
+			</tr>
+			<c:forEach var="account" items="${account}">
+				<tr>
+					<td>${account.accountnum}</td>
+					<td>${account.amount}</td>
+					<td>${account.accounttype}</td>
+				</tr>
+			</c:forEach>
+		</center>
+	</table>
+</body>
+</html>

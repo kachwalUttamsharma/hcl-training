@@ -1,0 +1,7 @@
+package com.hcl.lamda;
+@FunctionalInterface
+public interface Sai {
+ public static haisai() {
+	 System.out.println("yenti");
+	 }
+}

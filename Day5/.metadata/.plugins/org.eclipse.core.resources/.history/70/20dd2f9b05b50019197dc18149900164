@@ -1,0 +1,22 @@
+package com.hcl.collections;
+
+import java.util.Comparator;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class SortEmploy {
+
+	public static void main(String[] args) {
+		Comparator c = new NameComparator();
+		SortedSet s = new TreeSet();
+		s.add(new Employ(1,"Hema",545234));
+		s.add(new Employ(1,"Rema",376782));
+		s.add(new Employ(1,"garr",923767));
+		s.add(new Employ(1,"jaat",123984));
+		s.add(new Employ(1,"liit",383940));
+		s.add(new Employ(1,"mmmm",984628));
+		System.out.println("Sorted Data");
+		s.forEach(System.out::println);
+		
+	}
+}

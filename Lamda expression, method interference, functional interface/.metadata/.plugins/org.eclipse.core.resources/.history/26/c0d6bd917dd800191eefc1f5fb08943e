@@ -1,0 +1,17 @@
+package com.hcl.fi;
+
+public class EmployeeInterfaceMain {
+  public static void main(String[] args) {
+  EmployeInterface employeeinterface = Employee::new;
+  Employee employee= employeeinterface.show(20, "HCL");
+ System.out.println(employee.getEmpNo()); 
+ System.out.println(employee.getEmpName());
+ 
+ EmployeeInterfaceint employeeinterfaceint= Employee::new;
+ EmployeeInterfaceString employeinterfacestring = Employee::new;
+ Employee employee2=employeeinterfaceint.show(20);
+ Employee employee3=employeinterfacestring.show("uttam");
+ System.out.println(employee2.getEmpNo());
+ System.out.println(employee3.getEmpName());
+}
+}  

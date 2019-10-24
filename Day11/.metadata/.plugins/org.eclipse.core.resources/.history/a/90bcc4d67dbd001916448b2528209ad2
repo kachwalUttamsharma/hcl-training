@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>This is the Example for <b>Bold</b>tag</p>
+	<p>This is the Example for <i>Italic</i>tag</p>
+	<p>This is the Example for <u>Underline</u>tag</p>
+	<p>This is the Example for <strike>Strike</strike>tag</p>
+	<p>This is the Example for subscript H<sub>2</sub>SO<sub>4</sub></p>
+	<p>This is the Example for superscript A<sup>2</sup>+2AB+B<sup>2</sup></p>
+	
+	
+</body>
+</html>

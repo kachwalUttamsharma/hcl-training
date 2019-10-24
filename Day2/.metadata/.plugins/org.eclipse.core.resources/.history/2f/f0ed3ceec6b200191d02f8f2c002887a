@@ -1,0 +1,28 @@
+package com.hcl.inh;
+
+public class StringMethods {
+	
+	public void character(String s,int pos){
+		int i=0;
+		char[] arr = s.toCharArray();
+		for (char c : arr) {
+			i++;
+		}
+			if(pos>i){
+			System.out.println("Positon does not exist");
+		}
+			else{
+				for(int j=0;j<pos;j++){
+					if(arr[j]==pos){
+						System.out.println(arr[pos]);
+					}
+				}
+			}
+		
+		
+	}
+	public static void main(String[] args) {
+		StringMethods sm = new StringMethods();
+		sm.character("Hello",21);
+	}
+}

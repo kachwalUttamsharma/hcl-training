@@ -1,0 +1,96 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function chkLogin(){
+		var user ,pwd;
+		user = frmLogin.userName.value;
+		pwd = frmLogin.password.value;
+		if(user=="HCL" && pwd=="HCL"){
+			window.open("http://www.google.com");
+		} else {
+			document.getElementById("err1").innerHTML="Invalid Credentials.."
+		}
+	}
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name = "frmLogin">
+		<center>
+			<table border = "3">
+				<tr>
+					<th colspan = 2>Login</th>
+				</tr>
+				<tr>
+					<th>UserName</th>
+					<td><input type = "text" name = "userName"/>
+					<span id = "err1"></span>
+					</td>
+				</tr>
+				<tr>
+					<th>Password</th>
+					<td><input type = "password" name = "password"/></td>
+				</tr>
+				<tr>
+					<th colspan = 2><input type = "button" value = "login" 	 onclick="chkLogin()"/></th>
+				</tr>
+				<tr>
+				<th colspan = 2><input type = "reset" value = "Reset"></th>
+				</tr>
+			</table>
+	</center>
+	</form>
+</body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function chkLogin(){
+		var user ,pwd;
+		user = frmLogin.userName.value;
+		pwd = frmLogin.password.value;
+		if(user=="HCL" && pwd=="HCL"){
+			window.open("http://www.google.com");
+		} else {
+			document.getElementById("err1").innerHTML="Invalid Credentials.."
+		}
+	}
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name = "frmLogin">
+		<center>
+			<table border = "3">
+				<tr>
+					<th colspan = 2>Login</th>
+				</tr>
+				<tr>
+					<th>UserName</th>
+					<td><input type = "text" name = "userName"/>
+					<span id = "err1"></span>
+					</td>
+				</tr>
+				<tr>
+					<th>Password</th>
+					<td><input type = "password" name = "password"/></td>
+				</tr>
+				<tr>
+					<th colspan = 2><input type = "button" value = "login" 	 onclick="chkLogin()"/></th>
+				</tr>
+				<tr>
+				<th colspan = 2><input type = "reset" value = "Reset"></th>
+				</tr>
+			</table>
+	</center>
+	</form>
+</body>
+>>>>>>> aa5826ca9d0adb45959d1cbd7004f71603446a9f
+</html>

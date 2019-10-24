@@ -1,0 +1,5 @@
+package com.hcl.StudentSpringHibernatedao;
+
+public class Studentimplementation implements StudentDao {
+
+}

@@ -1,0 +1,20 @@
+package com.hcl.Dao;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.hcl.model.employee;
+
+@Repository
+public interface EmployeeRepository extends CrudRepository<employee, Integer>{
+
+ @Query("SELECT e FROM employee e WHERE Dept = ?1 AND Desig = ?2")
+ List<employee>findByDeptAndDesign(String department,String designation);
+ 
+ @Query("SELECT e FROM employee e WHERE Dept = ?")
+ List<employee>findByDept(String department);
+
+}

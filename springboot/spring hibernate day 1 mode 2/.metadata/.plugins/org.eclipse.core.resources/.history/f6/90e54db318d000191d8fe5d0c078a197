@@ -1,0 +1,34 @@
+package com.hcl.StudentSpringHibernatedao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.hcl.StudentSpringHibernate.controller.HibernateUtil;
+import com.hcl.StudentSpringHibernate.model.Student;
+
+public class Studentimplementation implements StudentDao {
+
+	public boolean addStudent(Student st) {
+		SessionFactory sf = HibernateUtil.getConnection();
+		Session s =sf.openSession();
+		if(st !=null){
+			Transaction t=s.beginTransaction();
+			s.save(st);
+			t.commit();
+			return true;
+		}else{
+		return false;
+		}
+	}
+	public boolean upateStudent(Student st) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public Student getStudent(int Rollnum) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

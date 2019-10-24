@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="personalData" style ="color: #0900C4; font: helvetica 12pt; border: 1px solid black; ">
+<b>Welcome to personal details</b> <br/>
+<p>
+Hi T am Laksh Babbar from Delhi...
+I have 10 years of industry experience
+</p>
+</div><br/><br/>
+</body>
+</html>

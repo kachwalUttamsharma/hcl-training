@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC 
+"-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd"> 
+<beans>
+	<bean id="bean1" class="com.hcl.hello.HelloImpl">
+		<property name="greeting" value="Good Morning..."/>
+	</bean>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC 
+"-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd"> 
+<beans>
+	<bean id="bean1" class="com.hcl.hello.HelloImpl">
+		<property name="greeting" value="Good Morning..."/>
+	</bean>
+>>>>>>> aa5826ca9d0adb45959d1cbd7004f71603446a9f
+</beans>

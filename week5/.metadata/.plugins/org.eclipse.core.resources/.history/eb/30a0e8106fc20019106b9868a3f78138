@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method = "get" action = "MenuServlet" >
+<center>
+<a href='Addstock' >AddStock</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href = 'SearchStock' >SearchStock</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href = 'PlaceOrder' >PlaceOrder</a> 
+</center>
+</form>
+</body>
+</html>

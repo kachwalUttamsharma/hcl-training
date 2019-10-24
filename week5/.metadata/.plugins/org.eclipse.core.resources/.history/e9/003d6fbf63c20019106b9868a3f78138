@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method = "get" action = "SearchStockServlet">
+<center>
+StockId :
+<input type = "text" name = "StockId"/><br/><br/>
+<input type = "submit" name = "Search"/>
+</center>
+</form>
+</body>
+</html>

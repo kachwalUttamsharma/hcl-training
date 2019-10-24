@@ -1,0 +1,15 @@
+package com.hcl.Ex;
+
+public class Ex3 {
+
+	public static void main(String[] args) {
+		try{
+			System.out.println("A");
+			throw new NullPointerException();
+		} catch(NullPointerException e){
+			System.out.println("Error");
+		}catch (ArithmeticException e){
+			System.out.println(e);
+		}
+	}
+}

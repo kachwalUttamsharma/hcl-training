@@ -1,0 +1,16 @@
+package com.hcl.uttam;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public  class UserRepositoryimpl  {
+
+  @Autowired
+  UserRepository userRepository;
+  
+  public User userAuthentication(User user) {
+	  return userRepository.getUserByUsername(user);
+  }
+
+}

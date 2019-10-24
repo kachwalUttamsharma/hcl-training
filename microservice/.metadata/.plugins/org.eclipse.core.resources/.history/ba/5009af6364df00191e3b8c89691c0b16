@@ -1,0 +1,13 @@
+package com.jcombat.discovery;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DiscoveryMicroservices1Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DiscoveryMicroservices1Application.class, args);
+	}
+
+}

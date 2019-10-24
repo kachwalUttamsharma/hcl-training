@@ -1,0 +1,49 @@
+package com.hcl.ex;
+/** This is javadoc.
+ * 
+ * @author coalesce
+ * 
+ */
+
+public class Custom1 { 
+  /** This is also javadoc.
+ * 
+ * @param s is string.
+ * @throws InvalidEmailException is for exception.
+ * @throws InvalidUsernameException is for another exception.
+*/
+  public void check(String s) throws InvalidEmailException, InvalidUsernameException { 
+    boolean flag = false; 
+    int n=0;
+    char[] c = s.toCharArray();
+    for (int i = 0; i <= s.length() - 1;i++) { 
+			if(c[i]=='@'){
+				flag = true;
+				System.out.println("has @");
+				break;
+			}else{
+				n++;
+				//flag = false;
+			}
+		
+		}
+		if (flag == false){
+			throw new InvalidEmailException("Without @");
+		}
+		if(n>12){
+			throw new InvalidUsernameException("Characters are greater than 12");
+		}
+		
+	} 
+	public static void main(String[] args) {
+		String s="hello@gmail.com";
+		try {
+			new Custom1().check(s);
+		} catch (InvalidEmailException | InvalidUsernameException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+}

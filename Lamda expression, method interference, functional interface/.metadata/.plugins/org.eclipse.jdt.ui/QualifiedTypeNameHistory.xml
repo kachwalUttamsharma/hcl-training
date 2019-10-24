@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.hcl.lamda.MyInterfaceWithReturn"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.hcl.lamda.DefaultInterfaceimpl"/>
+<fullyQualifiedTypeName name="com.hcl.lamda.MultiInterface"/>
+<fullyQualifiedTypeName name="java.util.function.BiFunction"/>
+<fullyQualifiedTypeName name="com.hcl.fi.MyInterface"/>
+<fullyQualifiedTypeName name="java.util.function.Consumer"/>
+<fullyQualifiedTypeName name="com.hcl.fi.MethodReferenceStatic"/>
+<fullyQualifiedTypeName name="com.hcl.fi.InstanceMethodReference"/>
+<fullyQualifiedTypeName name="com.hcl.fi.InstanceInterface"/>
+<fullyQualifiedTypeName name="com.hcl.fi.EmployeeInterfaceMain"/>
+<fullyQualifiedTypeName name="com.hcl.fi.EmployeInterface"/>
+<fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+<fullyQualifiedTypeName name="com.hcl.fi.EmployeeInterfaceint"/>
+<fullyQualifiedTypeName name="com.hcl.fi.Employee"/>
+<fullyQualifiedTypeName name="com.hcl.fi.EmployeeInterfaceString"/>
+</qualifiedTypeNameHistroy>

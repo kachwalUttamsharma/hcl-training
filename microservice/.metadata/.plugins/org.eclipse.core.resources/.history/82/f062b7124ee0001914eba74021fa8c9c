@@ -1,0 +1,11 @@
+package com.hcl.uttam;
+
+public class ClientServiceUserimpl implements ClientServiceUser {
+
+	@Override
+	public String login(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,107 @@
+<<<<<<< HEAD
+package com.hcl.inventory;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+/**
+ * Servlet implementation class AddStockServlet
+ */
+public class AddStockServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public AddStockServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String stockId = InventoryBAL.generateStockIdBal();
+		Stock Stock1 = new Stock();
+		Stock1.setStockId(stockId);
+		Stock1.setItemName(request.getParameter("ItemName"));
+		Stock1.setPrice(Double.parseDouble(request.getParameter("Price")));
+		Stock1.setQuantityAvail(Integer.parseInt(request.getParameter("QuantityAvailable")));
+		String result = InventoryBAL.addStockIdBal(Stock1);
+		PrintWriter out = response.getWriter();
+		out.println(result);
+		RequestDispatcher disp = request.getRequestDispatcher("MenuServlet");
+		disp.include(request,response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}
+=======
+package com.hcl.inventory;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+/**
+ * Servlet implementation class AddStockServlet
+ */
+public class AddStockServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public AddStockServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String stockId = InventoryBAL.generateStockIdBal();
+		Stock Stock1 = new Stock();
+		Stock1.setStockId(stockId);
+		Stock1.setItemName(request.getParameter("ItemName"));
+		Stock1.setPrice(Double.parseDouble(request.getParameter("Price")));
+		Stock1.setQuantityAvail(Integer.parseInt(request.getParameter("QuantityAvailable")));
+		String result = InventoryBAL.addStockIdBal(Stock1);
+		PrintWriter out = response.getWriter();
+		out.println(result);
+		RequestDispatcher disp = request.getRequestDispatcher("MenuServlet");
+		disp.include(request,response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}
+>>>>>>> aa5826ca9d0adb45959d1cbd7004f71603446a9f

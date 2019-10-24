@@ -1,0 +1,11 @@
+package com.hcl.threads;
+
+public class hhsh {
+	public static void main1(String[] args) {
+		System.out.println("jhndsh");
+
+	}
+	static public void main(String[] args) {
+		System.out.println("jhndsh");
+	}
+}

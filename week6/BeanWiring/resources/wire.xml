@@ -1,0 +1,100 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC 
+"-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="studentOne" class="com.hcl.beans.Student">
+		<property name="sno" value="1"></property>
+		<property name="name" value="Lux"></property>
+		<property name="lunchbox">
+			<bean class="com.hcl.beans.LunchBox">
+				<property name="snacks" value="Burger"></property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="studentTwo" class="com.hcl.beans.Student">
+		<property name="sno" value="2" />
+		<property name="name" value="AAAdi" />
+		<property name="lunchbox">
+			<bean class="com.hcl.beans.LunchBox">
+				<property name="snacks" value="pizza" />
+			</bean>
+		</property>
+	</bean>
+
+
+	<bean id="studentThree" class="com.hcl.beans.Student">
+		<property name="sno" value="3"></property>
+		<property name="name" value="Athar"></property>
+		<property name="lunchbox">
+			<bean class="com.hcl.beans.LunchBox">
+				<property name="snacks" value="Idly"></property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="faculty" class="com.hcl.beans.Faculty">
+		<property name="fname" value="Prassana" />
+		<property name="students">
+			<list>
+				<ref bean="studentOne" />
+				<ref bean="studentTwo" />
+				<ref bean="studentThree" />
+			</list>
+		</property>
+
+	</bean>
+
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC 
+"-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="studentOne" class="com.hcl.beans.Student">
+		<property name="sno" value="1"></property>
+		<property name="name" value="Lux"></property>
+		<property name="lunchbox">
+			<bean class="com.hcl.beans.LunchBox">
+				<property name="snacks" value="Burger"></property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="studentTwo" class="com.hcl.beans.Student">
+		<property name="sno" value="2" />
+		<property name="name" value="AAAdi" />
+		<property name="lunchbox">
+			<bean class="com.hcl.beans.LunchBox">
+				<property name="snacks" value="pizza" />
+			</bean>
+		</property>
+	</bean>
+
+
+	<bean id="studentThree" class="com.hcl.beans.Student">
+		<property name="sno" value="3"></property>
+		<property name="name" value="Athar"></property>
+		<property name="lunchbox">
+			<bean class="com.hcl.beans.LunchBox">
+				<property name="snacks" value="Idly"></property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="faculty" class="com.hcl.beans.Faculty">
+		<property name="fname" value="Prassana" />
+		<property name="students">
+			<list>
+				<ref bean="studentOne" />
+				<ref bean="studentTwo" />
+				<ref bean="studentThree" />
+			</list>
+		</property>
+
+	</bean>
+
+>>>>>>> aa5826ca9d0adb45959d1cbd7004f71603446a9f
+</beans>

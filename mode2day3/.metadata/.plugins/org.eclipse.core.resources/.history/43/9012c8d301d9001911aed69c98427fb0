@@ -1,0 +1,5 @@
+package com.hcl.EmployeeStream;
+
+public class Employee {
+
+}

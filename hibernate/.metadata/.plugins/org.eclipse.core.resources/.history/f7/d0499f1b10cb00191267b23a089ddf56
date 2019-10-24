@@ -1,0 +1,28 @@
+package com.hcl.Hib;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
+
+import com.hcl.Hib.Department;
+
+public class Main {
+	public static void main(String[] args) {
+		Configuration cfg=new AnnotationConfiguration();
+		cfg.configure("hibernate.cfg.xml");
+		SessionFactory sf=cfg.buildSessionFactory();
+	   Session s=sf.openSession();
+	   Query q=s.createQuery("from Department");
+	   List<Department> lstDepartment=q.list();
+	   for (Department department : lstDepartment) {
+		System.out.println("deptno " +Department.getdeptno);
+		System.out.println("dname " +Department.getdname());
+		System.out.println("loc " +Department.getloc());
+		System.out.println("head " +Department.gethead());
+	}
+	 }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function uttam(){
+		alert("Hi Uttam.")
+	}
+	function Amit(){
+		alert("Hi amit.")
+	}
+	function Bindu(){
+		alert("Hi Bindu.")
+	}
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<center>
+		<input type = "button" value = "Uttam" onclick = "uttam()"/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type = "button" value = "Amit" onclick = "Amit()"/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type = "button" value = "bindu" onclick = "Bindu()"/>
+	</center>
+</body>
+</html>

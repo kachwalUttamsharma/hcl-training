@@ -1,0 +1,2 @@
+127.0.0.1 - - [05/Sep/2019:22:11:17 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [05/Sep/2019:22:11:18 +0530] "GET /StudentSpringHibernate1/StudentInput.jsp HTTP/1.1" 200 1114

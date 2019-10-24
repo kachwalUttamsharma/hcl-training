@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employee SYSTEM "employee.dtd">
+<employee>
+<empno>1</empno>
+<empname>A</empname>
+<salary>10000</salary>
+<band>M</band>
+<dateofjoin>2019-06-15</dateofjoin>
+</employee>

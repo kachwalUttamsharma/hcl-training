@@ -1,0 +1,11 @@
+package com.hcl.lamda;
+
+public class MultiInterfaceimpl {
+
+	public static void main(String[] args) {
+       String name="uttam";
+		MultiInterface m= (String name)-> {System.out.println(name));
+		return name;
+	};
+	}
+}

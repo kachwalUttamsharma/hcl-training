@@ -1,0 +1,32 @@
+package com.hcl.CollegeProject;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+
+
+public class FeedbackCrud {
+  public static String feedbackID(){
+	  SessionFactory sf=HibernateUtil.getConnection();
+		Session s=sf.openSession();
+		Query q=s.createQuery("select max(fid) from FeedBack");
+		List<FeedBack> lst = q.list();
+		String fid="";
+		FeedBack f=lst.get(0);
+		if(f==null){
+			fid="F001";
+		}else{
+			fid = f.getFid();
+			int id=Integer.parseInt(fid.substring(1));
+			id++;
+			String format = String.format("%03d", id);
+			fid="F"+format;
+		}
+		
+		return fid;
+  }
+}

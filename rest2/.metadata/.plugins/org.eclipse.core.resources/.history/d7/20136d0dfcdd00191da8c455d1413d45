@@ -1,0 +1,20 @@
+package com.hcl.service;
+
+import java.awt.PageAttributes.MediaType;
+import java.util.List;
+
+
+import com.hcl.dao.Employeedao;
+import com.hcl.dao.Employeedaoimpl;
+import com.hcl.model.Employee;
+
+@Produces(javax.ws.rs.core.MediaType)
+public class EmployeeServiceimpl implements EmployeeService{
+	Employeedao employeedao= new Employeedaoimpl();
+	@Override
+	public List<Employee> getAllEmployees() {
+			return employeedao.getAllEmployee();
+		
+	}
+
+}

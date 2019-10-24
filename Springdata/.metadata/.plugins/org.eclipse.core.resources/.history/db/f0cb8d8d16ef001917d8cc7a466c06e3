@@ -1,0 +1,23 @@
+package com.hcl.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "employee")
+public class employee {
+	
+@Id
+@Column (name = "empno")
+   private int empno;
+@Column (name = "name")
+   private String name;
+@Column (name = "basic")
+   private int basic;
+@Column (name = "dept")
+   private String dept;
+@Column (name = "desig")
+   private String desig;
+}

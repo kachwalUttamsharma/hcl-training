@@ -1,0 +1,11 @@
+package com.hcl.Jason;
+
+public class JasonMapExample {
+	 Map obj=new HashMap();    
+	  obj.put("name","sonoo");    
+	  obj.put("age",new Integer(27));    
+	  obj.put("salary",new Double(600000));   
+	  String jsonText = JSONValue.toJSONString(obj);  
+	  System.out.print(jsonText);  
+}
+}

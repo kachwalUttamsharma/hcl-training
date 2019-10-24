@@ -1,0 +1,13 @@
+package com.hcl.EmployInsertAnnotation;
+
+import java.util.Scanner;
+
+import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
+
+public class EmployInsertMain {
+ EmployInsert e=new EmployInsert();
+ Scanner sc=new Scanner(System.in);
+ Configuration cfg=new AnnotationConfiguration();
+ 
+}

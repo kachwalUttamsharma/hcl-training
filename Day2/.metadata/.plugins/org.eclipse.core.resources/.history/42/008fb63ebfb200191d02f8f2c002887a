@@ -1,0 +1,17 @@
+package com.hcl.Boxing;
+
+import com.hcl.inh.Modifier;
+
+public class Test7 extends Modifier{
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte b1;
+		b1 = 15+110;
+		System.out.println(b1);
+	//	b1 = 15+210;
+		Test7 obj = new Test7();
+		obj.show();
+	}
+
+}

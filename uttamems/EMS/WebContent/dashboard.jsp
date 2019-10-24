@@ -1,0 +1,122 @@
+<<<<<<< HEAD
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+#mainSec{
+	
+	border:1px solid black;
+}
+#myProfile{
+	height:300px;
+	width:500px;
+	border:1px solid black;
+	float:left;
+}
+#mngrProfile{
+	height:300px;
+	border:1px solid black;
+}
+#myLeave{
+	height:250px;
+	border:1px solid black;
+}
+#empLeave{
+	height:250px;
+	border:1px solid black;
+}
+
+</style>
+<body>
+Welcome to <%=(String)session.getAttribute("EMP_ID") %>
+	<div id="mainSec">
+		
+		<div id="myProfile">
+		
+			<jsp:include page="MyAccount.jsp" />
+		
+		</div>
+		<div id="mngrProfile">
+		
+			<jsp:include page="ManagerAccount.jsp" />
+		
+		</div>
+		<div id="myLeave">
+		
+			<jsp:include page="MyLeaves.jsp" />
+	
+		</div>
+		<div id="empLeave">
+		
+			<jsp:include page="EmpLeaves.jsp" />
+		
+		</div>
+	</div>
+</body>
+=======
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+#mainSec{
+	
+	border:1px solid black;
+}
+#myProfile{
+	height:300px;
+	width:500px;
+	border:1px solid black;
+	float:left;
+}
+#mngrProfile{
+	height:300px;
+	border:1px solid black;
+}
+#myLeave{
+	height:250px;
+	border:1px solid black;
+}
+#empLeave{
+	height:250px;
+	border:1px solid black;
+}
+
+</style>
+<body>
+Welcome to <%=(String)session.getAttribute("EMP_ID") %>
+	<div id="mainSec">
+		
+		<div id="myProfile">
+		
+			<jsp:include page="MyAccount.jsp" />
+		
+		</div>
+		<div id="mngrProfile">
+		
+			<jsp:include page="ManagerAccount.jsp" />
+		
+		</div>
+		<div id="myLeave">
+		
+			<jsp:include page="MyLeaves.jsp" />
+	
+		</div>
+		<div id="empLeave">
+		
+			<jsp:include page="EmpLeaves.jsp" />
+		
+		</div>
+	</div>
+</body>
+>>>>>>> aa5826ca9d0adb45959d1cbd7004f71603446a9f
+</html>

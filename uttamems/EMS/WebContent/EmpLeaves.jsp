@@ -1,0 +1,90 @@
+<<<<<<< HEAD
+<%@page import="com.hcl.ems.Leaves"%>
+<%@page import="com.hcl.ems.EmsBal"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<tr class="table-primary">
+			<th>Employ ID</th>
+			<th>Employ Name</th>
+			<th>Employ Leave Balance</th>
+			
+			<th>Leave ID</th>	
+			<th>Start Date</th>
+			<th>End Date</th>
+			<th>Leave Type</th>
+			<th>Status</th>
+			<th>Reason</th>
+			<th>Number of Days</th>
+		</tr>
+		
+		<%
+		int mgrId = Integer.parseInt((String)session.getAttribute("EMP_ID"));
+		out.println(mgrId);
+	 	List<Leaves> leaves = EmsBal.getEmployLeavesBal(mgrId);
+	 	int i = 0 ;
+	 	while(leaves.size() > 0){
+	 		Leaves l = new Leaves();
+	 		l = leaves.get(i);
+	 		out.println(l.getReason());
+	 	}
+	 	
+	 	%>
+	 	
+	</table>
+
+</body>
+=======
+<%@page import="com.hcl.ems.Leaves"%>
+<%@page import="com.hcl.ems.EmsBal"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<tr class="table-primary">
+			<th>Employ ID</th>
+			<th>Employ Name</th>
+			<th>Employ Leave Balance</th>
+			
+			<th>Leave ID</th>	
+			<th>Start Date</th>
+			<th>End Date</th>
+			<th>Leave Type</th>
+			<th>Status</th>
+			<th>Reason</th>
+			<th>Number of Days</th>
+		</tr>
+		
+		<%
+		int mgrId = Integer.parseInt((String)session.getAttribute("EMP_ID"));
+		out.println(mgrId);
+	 	List<Leaves> leaves = EmsBal.getEmployLeavesBal(mgrId);
+	 	int i = 0 ;
+	 	while(leaves.size() > 0){
+	 		Leaves l = new Leaves();
+	 		l = leaves.get(i);
+	 		out.println(l.getReason());
+	 	}
+	 	
+	 	%>
+	 	
+	</table>
+
+</body>
+>>>>>>> aa5826ca9d0adb45959d1cbd7004f71603446a9f
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.hcl.web.MainApplication"/>
+<fullyQualifiedTypeName name="com.hcl.web.CalculatorProxy"/>
+<fullyQualifiedTypeName name="com.u.UttamProxy"/>
+<fullyQualifiedTypeName name="com.hcl.saikumar.SaiKumarProxy"/>
+<fullyQualifiedTypeName name="com.y.YaswanthProxy"/>
+<fullyQualifiedTypeName name="com.javacodegeeks.examples.jaxWsAnnotations.webservice.WSAnnotationWebServiceIProxy"/>
+<fullyQualifiedTypeName name="helloservice.endpoint.HelloProxy"/>
+<fullyQualifiedTypeName name="javax.jws.WebService"/>
+<fullyQualifiedTypeName name="javax.jws.WebMethod"/>
+<fullyQualifiedTypeName name="com.hcl.WSPublisher"/>
+<fullyQualifiedTypeName name="com.main"/>
+<fullyQualifiedTypeName name="com.HelloWorldProxy"/>
+</qualifiedTypeNameHistroy>

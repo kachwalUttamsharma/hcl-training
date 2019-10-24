@@ -1,0 +1,36 @@
+package com.hcl.ex;
+
+public class Multi {
+	
+	public void calc(String[] s1,String[] s2){
+		//int s;
+		String[] s3 = new String[100];
+		int l1 = s1.length;
+		int l2 = s2.length;
+		int c,res;
+		for(int i = l1-1;i>=0;i--){
+			res = Integer.parseInt("" + s2[l2-1])*Integer.parseInt("" + s1[i]);
+			if(res>10){
+				c=res/10;
+				res=res%10;
+			}else{
+				c=0;
+			}
+			s1[i-1]=""+(Integer.parseInt(s1[i-1])+c) ;
+			s3[100-i]="" + res;
+		}
+		for (String string : s3) {
+			System.out.println(string);
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		Multi m1 = new Multi();
+		String[] s1 = new String[]{"23232"};
+		String[] s2 = new String[]{"2342"};
+		
+		m1.calc( s1 , s2 );
+	}
+
+}

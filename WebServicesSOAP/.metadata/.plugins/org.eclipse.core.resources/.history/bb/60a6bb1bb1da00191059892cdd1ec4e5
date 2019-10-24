@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/com/hcl/saikumar/SaiKumar.java=UTF-8
+encoding//src/com/hcl/saikumar/SaiKumarService.java=UTF-8
+encoding//src/com/hcl/saikumar/SaiKumarServiceLocator.java=UTF-8
+encoding//src/com/hcl/saikumar/SaiKumarSoapBindingStub.java=UTF-8
+encoding//src/com/hcl/web/Calculator.java=UTF-8
+encoding//src/com/hcl/web/CalculatorService.java=UTF-8
+encoding//src/com/hcl/web/CalculatorServiceLocator.java=UTF-8
+encoding//src/com/hcl/web/CalculatorSoapBindingStub.java=UTF-8

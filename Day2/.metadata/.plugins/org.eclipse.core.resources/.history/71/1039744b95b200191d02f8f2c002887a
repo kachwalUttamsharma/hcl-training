@@ -1,0 +1,15 @@
+package com.hcl.Boxing;
+
+public class ConDemo {
+	static{
+		System.out.println("Static");
+	}
+	public ConDemo(){
+		System.out.println("Default");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

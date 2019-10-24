@@ -1,0 +1,52 @@
+package com.hcl.uttam;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "account")
+public class account {
+
+ @Id
+ @Column(name = "accountnum")
+ private int accountnum;
+ @Column (name = "amount")
+ private double amount;
+ @Column (name = "accounttype")
+ private char accounttype;
+ @Column (name = "userid")
+ private int userid;
+public int getAccountnum() {
+	return accountnum;
+}
+public void setAccountnum(int accountnum) {
+	this.accountnum = accountnum;
+}
+public double getAmount() {
+	return amount;
+}
+public void setAmount(double amount) {
+	this.amount = amount;
+}
+public char getAccountype() {
+	return accountype;
+}
+public void setAccountype(char accountype) {
+	this.accountype = accountype;
+}
+public int getUserid() {
+	return userid;
+}
+public void setUserid(int userid) {
+	this.userid = userid;
+}
+@Override
+public String toString() {
+	return "account [accountnum=" + accountnum + ", amount=" + amount + ", accountype=" + accountype + ", userid="
+			+ userid + "]";
+}
+ 
+	
+}

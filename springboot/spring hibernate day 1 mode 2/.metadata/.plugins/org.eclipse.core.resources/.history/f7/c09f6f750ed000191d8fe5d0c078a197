@@ -1,0 +1,10 @@
+package com.hcl.StudentSpringHibernatedao;
+
+import com.hcl.StudentSpringHibernate.model.Student;
+
+public interface StudentDao {
+  public boolean addStudent();
+  public boolean upateStudent();
+  public Student getStudent(int Rollnum);
+  
+}

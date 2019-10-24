@@ -1,0 +1,6 @@
+INDEX VERSION 1.3+C:\hcljava\mode2day1\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2513898892.index
+2011206530.index
+1099449432.index
+3232457319.index
+184989111.index

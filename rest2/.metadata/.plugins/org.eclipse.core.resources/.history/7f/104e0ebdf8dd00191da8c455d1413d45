@@ -1,0 +1,19 @@
+package com.hcl.service;
+
+import java.util.List;
+
+import com.hcl.dao.Employeedao;
+import com.hcl.dao.Employeedaoimpl;
+import com.hcl.model.Employee;
+
+public class EmployeeServiceimpl implements EmployeeService{
+
+	
+	public List<Employee> getAllEmployees() {
+		Employeedao employeedao= new Employeedaoimpl();
+		public List<Employee> getAllEmployees(){
+			return employeedao.getAllEmployee();
+		}
+	}
+
+}

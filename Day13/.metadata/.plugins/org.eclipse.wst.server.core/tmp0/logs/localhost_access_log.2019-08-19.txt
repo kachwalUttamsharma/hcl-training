@@ -1,0 +1,12 @@
+127.0.0.1 - - [19/Aug/2019:09:37:58 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [19/Aug/2019:09:37:59 +0530] "GET /ServletDemo/LoginServlet HTTP/1.1" 200 23
+0:0:0:0:0:0:0:1 - - [19/Aug/2019:09:38:05 +0530] "GET /ServletDemo/LoginServlet HTTP/1.1" 200 23
+0:0:0:0:0:0:0:1 - - [19/Aug/2019:09:38:06 +0530] "GET /ServletDemo/LoginServlet HTTP/1.1" 200 23
+0:0:0:0:0:0:0:1 - - [19/Aug/2019:09:38:06 +0530] "GET /ServletDemo/LoginServlet HTTP/1.1" 200 23
+0:0:0:0:0:0:0:1 - - [19/Aug/2019:09:38:21 +0530] "GET /ServletDemo/LoginServlet HTTP/1.1" 200 23
+0:0:0:0:0:0:0:1 - - [19/Aug/2019:09:38:27 +0530] "GET /ServletDemo/LoginServlet HTTP/1.1" 200 23
+0:0:0:0:0:0:0:1 - - [19/Aug/2019:09:38:45 +0530] "GET /ServletDemo/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Aug/2019:09:38:55 +0530] "POST /ServletDemo/LoginServlet HTTP/1.1" 200 423
+127.0.0.1 - - [19/Aug/2019:09:39:21 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [19/Aug/2019:09:39:25 +0530] "POST /ServletDemo/LoginServlet HTTP/1.1" 500 399
+0:0:0:0:0:0:0:1 - - [19/Aug/2019:09:39:46 +0530] "POST /ServletDemo/LoginServlet HTTP/1.1" 500 399

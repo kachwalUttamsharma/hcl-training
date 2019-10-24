@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>EmployCrud</display-name>
+  <welcome-file-list>
+
+    <welcome-file>Employshow.jsp</welcome-file>
+  </welcome-file-list>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>EmployCrud</display-name>
+  <welcome-file-list>
+
+    <welcome-file>Employshow.jsp</welcome-file>
+  </welcome-file-list>
+>>>>>>> aa5826ca9d0adb45959d1cbd7004f71603446a9f
+</web-app>

@@ -1,0 +1,57 @@
+package com.hcl.StudentSpringHibernate.model;
+
+import java.util.Date;
+
+public class Student {
+  private int Rollnum;
+  private String Age;
+  private String Gender;
+  private String Name;
+  private String Country;
+  private float finalScore;
+  private Date dateofjoin;
+public int getRollnum() {
+	return Rollnum;
+}
+public void setRollnum(int rollnum) {
+	Rollnum = rollnum;
+}
+public String getAge() {
+	return Age;
+}
+public void setAge(String age) {
+	Age = age;
+}
+public String getGender() {
+	return Gender;
+}
+public void setGender(String gender) {
+	Gender = gender;
+}
+public String getName() {
+	return Name;
+}
+public void setName(String name) {
+	Name = name;
+}
+public String getCountry() {
+	return Country;
+}
+public void setCountry(String country) {
+	Country = country;
+}
+public float getFinalScore() {
+	return finalScore;
+}
+public void setFinalScore(float finalScore) {
+	this.finalScore = finalScore;
+}
+public Date getDateofjoin() {
+	return dateofjoin;
+}
+public void setDateofjoin(Date dateofjoin) {
+	this.dateofjoin = dateofjoin;
+}
+  
+  
+}
