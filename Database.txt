@@ -1,0 +1,468 @@
+create database sqlpractice;
+use  sqlpractice
+Create Table Employ
+(
+    Empno int,
+    Name varchar(50), 
+    Dept varchar(30),
+    Desig varchar(30),
+    Basic INT,
+    primary key(Empno)
+);
+Insert into Employ values
+(1,'kiran kumar kailasam','java','developer',42233),
+(2,'Vishnu Vardhan Reddy','dotnet','programmer',42133),
+(3,'Ram Kishan','java','developer',82233),
+(4,'Kareem','dotnet','programmer',52234),
+(5,'Sheik Sulthan Mohammad','dotnet','developer',42555)
+select * from employ
+
+use sqlpractice
+
+
+create table department(
+  deptno int,
+  dname  varchar(14),
+  loc    varchar(13),
+  constraint pk_dept primary key (deptno)
+);
+insert into department
+values(440, 'ACCOUNTING', 'NEW YORK');
+insert into department
+values(123, 'RESEARCH', 'DALLAS');
+insert into department
+values(486, 'SALES', 'CHICAGO');
+insert into department
+values(4568, 'OPERATIONS', 'BOSTON');
+
+create database college 
+use college;
+
+create table CourseList
+(
+   courseno varchar(15) primary key,
+   duration int,
+   startDate date,
+   endDate date,
+   HOD varchar(30)
+)
+
+
+
+create table subjects
+(
+   year int,
+   instructor varchar(28),
+subject varchar(150),
+theory int,
+practical int
+)
+
+select * from CourseList;
+drop table if exists subjects;
+create table subjects
+(  subId INT AUTO_INCREMENT primary key,
+year int,
+instructor varchar(28),
+subject varchar(150),
+theory int,
+practical int
+)
+select * from subjects;
+
+Create Table Feedback 
+(
+   fid varchar(15) primary key,
+   studentName varchar(30),
+   instructor varchar(30),
+   subject varchar(30),
+   fbvalue varchar(30)
+)
+select instructor from subjects;
+select distinct instructor from subjects; 
+select * from subjects;
+select Subject from Subjects where instructor = uttam;
+select distinct subject from Subjects where instructor ='kumar';
+update subjects set subject='c' where subid='1';
+update subjects set subject='c++' where subid='2';
+update subjects set subject='python' where subid='3';
+update subjects set subject='java' where subid='4';
+update subjects set subject='c#' where subid='5';
+update subjects set subject='boost' where subid='6';
+
+
+select * from feedback;
+
+truncate  table feedback;
+
+
+
+create database mode2db;
+use mode2db;
+create table student(
+rollnum int  ,
+id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+sname varchar(25),
+age int,
+gender varchar(20),
+country varchar(25),
+dateofjoin date,
+finalscore float 
+)
+drop table student
+desc student
+
+
+
+create database employtable;
+use employtable;
+
+CREATE TABLE `EMP_TBL` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `address` varchar(45) NOT NULL,
+  `telephone` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+desc EMP_TBL
+select * from emp_tbl
+
+use sqlpractice
+/*All User's gets stored in APP_USER table*/
+create table APP_USER (
+   id BIGINT NOT NULL AUTO_INCREMENT,
+   sso_id VARCHAR(30) NOT NULL,
+   password VARCHAR(100) NOT NULL,
+   first_name VARCHAR(30) NOT NULL,
+   last_name  VARCHAR(30) NOT NULL,
+   email VARCHAR(30) NOT NULL,
+   PRIMARY KEY (id),
+   UNIQUE (sso_id)
+);
+   
+/* USER_PROFILE table contains all possible roles */ 
+create table USER_PROFILE(
+   id BIGINT NOT NULL AUTO_INCREMENT,
+   type VARCHAR(30) NOT NULL,
+   PRIMARY KEY (id),
+   UNIQUE (type)
+);
+   
+/* JOIN TABLE for MANY-TO-MANY relationship*/  
+CREATE TABLE APP_USER_USER_PROFILE (
+    user_id BIGINT NOT NULL,
+    user_profile_id BIGINT NOT NULL,
+    PRIMARY KEY (user_id, user_profile_id),
+    CONSTRAINT FK_APP_USER FOREIGN KEY (user_id) REFERENCES APP_USER (id),
+    CONSTRAINT FK_USER_PROFILE FOREIGN KEY (user_profile_id) REFERENCES USER_PROFILE (id)
+);
+  
+/* Populate USER_PROFILE Table */
+INSERT INTO USER_PROFILE(type)
+VALUES ('USER');
+  
+INSERT INTO USER_PROFILE(type)
+VALUES ('ADMIN');
+  
+INSERT INTO USER_PROFILE(type)
+VALUES ('DBA');
+  
+  
+/* Populate one Admin User which will further create other users for the application using GUI */
+INSERT INTO APP_USER(sso_id, password, first_name, last_name, email)
+VALUES ('sam','$2a$10$4eqIF5s/ewJwHK1p8lqlFOEm2QIA0S8g6./Lok.pQxqcxaBZYChRm', 'Sam','Smith','samy@xyz.com');
+  
+  
+/* Populate JOIN Table */
+INSERT INTO APP_USER_USER_PROFILE (user_id, user_profile_id)
+  SELECT user.id, profile.id FROM app_user user, user_profile profile
+  where user.sso_id='sam' and profile.type='ADMIN';
+ 
+/* Create persistent_logins Table used to store rememberme related stuff*/
+CREATE TABLE persistent_logins (
+    username VARCHAR(64) NOT NULL,
+    series VARCHAR(64) NOT NULL,
+    token VARCHAR(64) NOT NULL,
+    last_used TIMESTAMP NOT NULL,
+    PRIMARY KEY (series)
+);
+
+
+create database modeTwoDB;
+use modeTwoDB;
+drop table Student;
+create table Student(
+	id int not null auto_increment,
+    rollNum int ,
+    sname varchar(30),
+    age int,
+    gender varchar(10),
+    country varchar(15),
+    DateOfJoin datetime,
+    FinalScore float,
+    primary key(id)
+);
+select * from Student;
+
+create table PERSON(
+	id int not null auto_increment,
+    name varchar(30),
+    country varchar(30),
+    primary key(id)
+);
+
+use modetwodb;
+CREATE TABLE `libusers` (
+  `Username` varchar(50) NOT NULL,
+  `Password` varchar(50) NOT NULL,
+  PRIMARY KEY (`Username`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+create table APP_USER (
+   id BIGINT NOT NULL AUTO_INCREMENT,
+   sso_id VARCHAR(30) NOT NULL,
+   password VARCHAR(100) NOT NULL,
+   first_name VARCHAR(30) NOT NULL,
+   last_name  VARCHAR(30) NOT NULL,
+   email VARCHAR(30) NOT NULL,
+   PRIMARY KEY (id),
+   UNIQUE (sso_id)
+);
+
+create table USER_PROFILE(
+   id BIGINT NOT NULL AUTO_INCREMENT,
+   type VARCHAR(30) NOT NULL,
+   PRIMARY KEY (id),
+   UNIQUE (type)
+);
+
+CREATE TABLE APP_USER_USER_PROFILE (
+    user_id BIGINT NOT NULL,
+    user_profile_id BIGINT NOT NULL,
+    PRIMARY KEY (user_id, user_profile_id),
+    CONSTRAINT FK_APP_USER FOREIGN KEY (user_id) REFERENCES APP_USER (id),
+    CONSTRAINT FK_USER_PROFILE FOREIGN KEY (user_profile_id) REFERENCES USER_PROFILE (id)
+);
+INSERT INTO USER_PROFILE(type)
+VALUES ('USER');
+  
+INSERT INTO USER_PROFILE(type)
+VALUES ('ADMIN');
+  
+INSERT INTO USER_PROFILE(type)
+VALUES ('DBA');
+
+INSERT INTO APP_USER(sso_id, password, first_name, last_name, email)
+VALUES ('samir','samir', 'Samir','Smith','samy@xyz.com');
+  
+  
+/* Populate JOIN Table */
+INSERT INTO APP_USER_USER_PROFILE (user_id, user_profile_id)
+  SELECT user.id, profile.id FROM app_user user, user_profile profile
+  where user.sso_id='sam' and profile.type='ADMIN';
+  INSERT INTO APP_USER_USER_PROFILE (user_id, user_profile_id)
+  SELECT user.id, profile.id FROM app_user user, user_profile profile
+  where user.sso_id='samir' and profile.type='ADMIN';
+ 
+/* Create persistent_logins Table used to store rememberme related stuff*/
+CREATE TABLE persistent_logins (
+    username VARCHAR(64) NOT NULL,
+    series VARCHAR(64) NOT NULL,
+    token VARCHAR(64) NOT NULL,
+    last_used TIMESTAMP NOT NULL,
+    PRIMARY KEY (series)
+);
+SELECT * FROM modetwodb.person;
+SELECT * FROM modetwodb.app_user;
+update app_user_user_profile set  user_profile_id = 2 where user_id = 4;
+SELECT * FROM modetwodb.app_user_user_profile;
+SELECT * FROM modetwodb.user_profile;
+
+create database modeTwoDB1;
+use modeTwoDB1;
+drop table Student;
+create table Student(
+	id int not null auto_increment,
+    rollNum int ,
+    sname varchar(30),
+    age int,
+    gender varchar(10),
+    country varchar(15),
+    DateOfJoin datetime,
+    FinalScore float,
+    primary key(id)
+);
+select * from Student;
+
+create table exam(
+ 	id int not null auto_increment,
+    subjectname varchar(30),
+    mark int not null,
+    studentid int,
+    primary key(id),
+     FOREIGN KEY (studentid) REFERENCES student(id)
+     );
+     select * from exam;
+
+create database java8streams;
+use java8streams;
+
+create table employee (
+empno int not null auto_increment primary key,
+empname varchar(20),
+salary float,
+band char,
+dateofjoin Date
+);
+
+insert into employee values
+('1','uttam','1000','e','2019-07-01'),
+('2','sai','2000','e','2018-09-01'),
+('3','yashwant','3000','e','2017-07-01'),
+('4','rishab','4000','e','2016-07-01'),
+('5','nagendra','5000','e','2015-07-01'),
+('6','satya','6000','e','2014-07-01'),
+('7','venkat','7000','e','2013-07-01'),
+('8','prem','8000','e','2012-07-01'),
+('9','vinod','9000','e','2011-07-01'),
+('10','raghu','10000','e','2010-07-01'),
+('11','tushar','1000','c','2019-07-01'),
+('12','yash','2000','c','2018-07-01'),
+('13','amit','3000','c','2017-07-01'),
+('14','anubhav','4000','c','2016-07-01'),
+('15','aditya','5000','c','2015-07-01'),
+('16','akash','6000','c','2014-07-01'),
+('17','aviral','7000','c','2013-07-01'),
+('18','kushagra','8000','c','2012-07-01'),
+('19','kevin','9000','c','2011-07-01'),
+('20','phani','10000','c','2010-07-01'),
+('21','riya','10000','m','2019-07-01'),
+('22','saksham','120000','m','2017-07-01'),
+('23','aatiqa','14000','m','2015-07-01'),
+('24','kausar','16000','m','2013-07-01'),
+('25','sonal','18000','m','2011-07-01');
+
+select * from employee
+
+ create database employeerest;
+ use employeerest;
+ create table employ(
+ name varchar(30),
+ salary double,
+ id int primary key
+ )
+ select * from employ;
+ 
+ insert into employ values
+ ('uttam','25000.0','1'),
+ ('sai','33000.0','2'),
+ ('yashwant','33300','3');
+
+create database hclbank
+use hclbank
+
+create table user(
+id int primary key auto_increment,
+username varchar(15) unique not null,
+password varchar(15) not null );
+
+insert into user(username, password) values
+("uttam","sharma"),
+("sai","kumar")
+
+select * from user;
+create table account(
+accountnum int primary key ,
+amount double ,
+accounttype char,
+userid int,
+foreign key(userid) references user(id)
+);
+truncate table account
+insert into account(accountnum, amount, accounttype, userid) values
+(61,5000000.0,"C",1),
+(78,2500000.0,"S",1),
+(12,350000.0,"C",2),
+(23,890000.0,"S",2);
+
+   delete from account where  accountnum = 78956
+select * from account;
+drop table account
+
+use sqlpractice
+select * from employ
+
+insert into employ values
+(11,"uttam","java","developer",1264),
+(6,"sai","java","coder",12325),
+(7,"yaswanth","dotnet","training",2347),
+(8,"rishab","java","training",76897476),
+(9,"babbar","java","training",4365735),
+(10,"hey","dotnet","training",234356);
+
+
+create database hql;
+use hql;
+CREATE TABLE `Employee` (
+  `emp_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `emp_name` varchar(20) NOT NULL,
+  `emp_salary` double(10,0) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`emp_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+ 
+CREATE TABLE `Address` (
+  `emp_id` int(11) unsigned NOT NULL,
+  `address_line1` varchar(50) NOT NULL DEFAULT '',
+  `zipcode` varchar(10) DEFAULT NULL,
+  `city` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`emp_id`),
+  CONSTRAINT `emp_fk_1` FOREIGN KEY (`emp_id`) REFERENCES `Employee` (`emp_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `Employee` (`emp_id`, `emp_name`, `emp_salary`)
+VALUES
+	(1, 'Pankaj', 100),
+	(2, 'David', 200),
+	(3, 'Lisa', 300),
+	(4, 'Jack', 400);
+
+
+INSERT INTO `Address` (`emp_id`, `address_line1`, `zipcode`, `city`)
+VALUES
+	(1, 'Albany Dr', '95129', 'San Jose'),
+	(2, 'Arques Ave', '95051', 'Santa Clara'),
+	(3, 'BTM 1st Stage', '560100', 'Bangalore'),
+	(4, 'City Centre', '100100', 'New Delhi');
+	
+    select * from employee
+    
+commit;
+
+
+create database jpa;
+use jpa;
+CREATE TABLE EMPLOYEE
+ ( EMP_ID int NOT NULL  auto_increment, 
+ NAME VARCHAR(25), 
+ PRIMARY KEY (EMP_ID)
+ );
+ 
+ drop table EMPLOYEE;
+ drop table EMPLOYEE_ADDRESS;
+ CREATE TABLE EMPLOYEE_ADDRESS 
+ ( 
+ ADDR_ID int NOT NULL auto_increment, 
+ EMP_ID int NOT NULL , 
+ STREET VARCHAR(25), 
+ CITY VARCHAR(25), 
+ STATE VARCHAR(25), 
+ COUNTRY VARCHAR(25), 
+
+ PRIMARY KEY (ADDR_ID),
+ 
+ CONSTRAINT fk_emp FOREIGN KEY (EMP_ID) REFERENCES EMPLOYEE (EMP_ID)
+ );
+ 
+ select * from EMPLOYEE
+  select * from EMPLOYEE_ADDRESS
